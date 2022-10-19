@@ -21,7 +21,7 @@ public class SquareWave : IWave
         {
             var time = (double)i / sample;
 
-            signal[i] = Math.Sign(Math.Sin(2 * Math.PI * time * Frequency));
+            signal[i] = Amplitude * Math.Sign(Math.Sin(2 * Math.PI * time * Frequency));
         }
 
         return signal;
