@@ -14,16 +14,12 @@ public class MainViewModel
         var xAxis = new LinearAxis
         {
             Position = AxisPosition.Bottom, 
-            Title = "Время, с",
-            IsZoomEnabled = false, 
-            IsPanEnabled = false
+            Title = "Время, с"
         };
         var yAxis = new LinearAxis
         {
             Position = AxisPosition.Left,
-            Title = "Амплитуда",
-            IsZoomEnabled = false,
-            IsPanEnabled = false
+            Title = "Смещение"
         };
             
         Signal.Axes.Add(xAxis);

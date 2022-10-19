@@ -79,7 +79,7 @@
             </Rectangle.Effect>
         </Rectangle>
         
-        <oxy:PlotView x:Name="PlotMagnitudes" Grid.Row="0" Grid.Column="1" Margin="40, 10, 40, 10"
+        <oxy:PlotView x:Name="OxyPlotSignal" Grid.Row="0" Grid.Column="1" Margin="40, 10, 40, 10"
                       Model="{Binding Signal}"
                       Background="#F0F0F0"/>
 

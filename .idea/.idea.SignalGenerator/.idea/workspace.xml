@@ -4,11 +4,12 @@
     <projectFile>SignalGeneratorGui/SignalGeneratorGui.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d420fc94-cefd-49d0-be07-00235caece85" name="Changes" comment="[feature] Add references">
-      <change afterPath="$PROJECT_DIR$/SignalGenerator/IWave.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SignalGeneratorGui/MainViewModel.cs" afterDir="false" />
+    <list default="true" id="d420fc94-cefd-49d0-be07-00235caece85" name="Changes" comment="[feature] Add .ctor">
+      <change afterPath="$PROJECT_DIR$/SignalGeneratorGui/WaveType.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SignalGenerator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SignalGenerator/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SignalGenerator/Generator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SignalGenerator/Generator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SignalGenerator/Waves/SineWave.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SignalGenerator/Waves/SineWave.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SignalGeneratorGui/MainViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SignalGeneratorGui/MainViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SignalGeneratorGui/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/SignalGeneratorGui/MainWindow.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SignalGeneratorGui/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SignalGeneratorGui/MainWindow.xaml.cs" afterDir="false" />
     </list>
@@ -19,6 +20,13 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/Users/damir/RiderProjects/SignalGenerator/SignalGenerator/Generator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/damir/RiderProjects/SignalGenerator/SignalGenerator/Generator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/damir/RiderProjects/SignalGenerator/SignalGenerator/Waves/SawtoothWave.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/damir/RiderProjects/SignalGenerator/SignalGenerator/Waves/SineWave.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/damir/RiderProjects/SignalGenerator/SignalGenerator/Waves/SquareWave.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/damir/RiderProjects/SignalGenerator/SignalGenerator/Waves/TriangleWave.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/damir/RiderProjects/SignalGenerator/SignalGeneratorGui/MainWindow.xaml.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/damir/RiderProjects/SignalGenerator/SignalGeneratorGui/MainWindow.xaml.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -65,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666167962091</updated>
-      <workItem from="1666167969878" duration="2279000" />
+      <workItem from="1666167969878" duration="4414000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1666168010821</created>
@@ -95,7 +103,28 @@
       <option name="project" value="LOCAL" />
       <updated>1666168564790</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="[feature] Create template for GUI">
+      <created>1666170295782</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666170295782</updated>
+    </task>
+    <task id="LOCAL-00006" summary="[feature] Add waves">
+      <created>1666171326358</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1666171326358</updated>
+    </task>
+    <task id="LOCAL-00007" summary="[feature] Add .ctor">
+      <created>1666172250434</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1666172250434</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +149,9 @@
     <MESSAGE value="[feature] Add project for create GUI" />
     <MESSAGE value="[fix] Change settings" />
     <MESSAGE value="[feature] Add references" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feature] Add references" />
+    <MESSAGE value="[feature] Create template for GUI" />
+    <MESSAGE value="[feature] Add waves" />
+    <MESSAGE value="[feature] Add .ctor" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feature] Add .ctor" />
   </component>
 </project>
