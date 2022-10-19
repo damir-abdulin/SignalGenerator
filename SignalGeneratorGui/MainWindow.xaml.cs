@@ -54,8 +54,8 @@ namespace SignalGeneratorGui
             {
                 WaveType.Sine => new SineWave(magnitude, frequency, phase),
                 WaveType.Square => new SquareWave(magnitude, frequency, phase),
-                WaveType.Triangle => new SquareWave(magnitude, frequency, phase),
-                WaveType.Sawtooth => new SquareWave(magnitude, frequency, phase),
+                WaveType.Triangle => new TriangleWave(magnitude, frequency, phase),
+                WaveType.Sawtooth => new SawtoothWave(magnitude, frequency, phase),
                 _ => new SineWave(magnitude, frequency, phase)
             };
 
@@ -67,7 +67,7 @@ namespace SignalGeneratorGui
             var dataSeries = new LineSeries { Title = "Сигнал", MarkerType=MarkerType.Circle };
             for (var i = 0; i < signal.Length; i++)
             {
-                dataSeries.Points.Add(new DataPoint((double)i / frameSize, 0));    
+                dataSeries.Points.Add(new DataPoint((double)i / sample, signal[i]));    
             }
             
             OxyPlotSignal.Model.Series.Clear();

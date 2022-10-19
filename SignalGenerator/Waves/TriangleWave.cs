@@ -15,6 +15,16 @@ public class TriangleWave: IWave
 
     public int[] GenerateSignal(int frameSize, int sample)
     {
-        throw new NotImplementedException();
+        var signal = new int[frameSize * sample];
+
+        for (var i = 0; i < signal.Length; i++)
+        {
+            var time = (double)i / sample;
+
+            signal[i] = (int)((2 * Amplitude / Math.PI) * Math.Asin(Math.Sin(2 * Math.PI * time * Frequency + Phase)));
+
+        }
+
+        return signal;
     }
 }

@@ -19,7 +19,9 @@ public class MainViewModel
         var yAxis = new LinearAxis
         {
             Position = AxisPosition.Left,
-            Title = "Смещение"
+            Title = "Смещение",
+            IsZoomEnabled = false,
+            IsPanEnabled = false
         };
             
         Signal.Axes.Add(xAxis);
