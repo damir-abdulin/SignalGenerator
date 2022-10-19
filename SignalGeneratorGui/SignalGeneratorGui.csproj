@@ -7,4 +7,12 @@
         <UseWPF>true</UseWPF>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\SignalGenerator\SignalGenerator.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="OxyPlot.Wpf" Version="2.1.0" />
+    </ItemGroup>
+
 </Project>
