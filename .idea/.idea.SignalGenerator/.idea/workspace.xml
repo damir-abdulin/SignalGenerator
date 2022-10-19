@@ -4,10 +4,13 @@
     <projectFile>SignalGeneratorGui/SignalGeneratorGui.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d420fc94-cefd-49d0-be07-00235caece85" name="Changes" comment="[feature] Add project for create GUI">
+    <list default="true" id="d420fc94-cefd-49d0-be07-00235caece85" name="Changes" comment="[feature] Add references">
       <change afterPath="$PROJECT_DIR$/SignalGenerator/IWave.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SignalGeneratorGui/MainViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SignalGenerator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SignalGenerator/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SignalGenerator/Generator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SignalGenerator/Generator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SignalGeneratorGui/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/SignalGeneratorGui/MainWindow.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SignalGeneratorGui/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SignalGeneratorGui/MainWindow.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666167962091</updated>
-      <workItem from="1666167969878" duration="529000" />
+      <workItem from="1666167969878" duration="2279000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1666168010821</created>
@@ -78,7 +81,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666168463935</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[fix] Change settings">
+      <created>1666168518520</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666168518520</updated>
+    </task>
+    <task id="LOCAL-00004" summary="[feature] Add references">
+      <created>1666168564790</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666168564790</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +118,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Init project" />
     <MESSAGE value="[feature] Add project for create GUI" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feature] Add project for create GUI" />
+    <MESSAGE value="[fix] Change settings" />
+    <MESSAGE value="[feature] Add references" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feature] Add references" />
   </component>
 </project>

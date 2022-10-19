@@ -24,5 +24,15 @@ namespace SignalGeneratorGui
         {
             InitializeComponent();
         }
+
+        private void ButtonGenerate_OnClick(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void TextBox_OnPreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = "0123456789".IndexOf(e.Text) < 0;
+        }
     }
 }

@@ -4,9 +4,84 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SignalGeneratorGui"
+        xmlns:oxy="http://oxyplot.org/wpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Signal Generator" WindowState="Maximized" FontFamily="Comic Sans MS" FontSize="16">
+    <Window.DataContext>
+        <local:MainViewModel/>
+    </Window.DataContext>
+    
+    <Grid Background="#DFDFDF">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.3*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <Rectangle Grid.Row="0" Grid.Column="0"
+                   Fill="#F0F0F0" RadiusX="5" RadiusY="5" Margin="10">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="10" Color="#FF8B8B8B" ShadowDepth="0"/>
+            </Rectangle.Effect>
+        </Rectangle>
+        
+        <StackPanel Grid.Column="0" Margin="20">
+            <TextBlock TextAlignment="Center" FontWeight="Bold"
+                       Margin="0, 0, 0, 20">Настройка генерации</TextBlock>
+            
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition Width="0.9*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                
+                <TextBlock Grid.Row="0" Grid.Column="0" Margin="5">Амплитуда: </TextBlock>
+                <TextBlock Grid.Row="1" Grid.Column="0" Margin="5">Частота: </TextBlock>
+                <TextBlock Grid.Row="2" Grid.Column="0" Margin="5">Фаза: </TextBlock>
+                <TextBlock Grid.Row="3" Grid.Column="0" Margin="5">Дискретизация: </TextBlock>
+                <TextBlock Grid.Row="4" Grid.Column="0" Margin="5">Форма: </TextBlock>
+                 
+                <TextBox x:Name="TextBoxMagnitude"  Grid.Row="0" Grid.Column="1" TextAlignment="Center" Margin="5"
+                         MaxLength="10"
+                         PreviewTextInput="TextBox_OnPreviewTextInput">0</TextBox>
+                <TextBox x:Name="TextBoxFrequency"  Grid.Row="1" Grid.Column="1" TextAlignment="Center" Margin="5"
+                        MaxLength="10"
+                        PreviewTextInput="TextBox_OnPreviewTextInput">0</TextBox>
+                <TextBox x:Name="TextBoxPhase"      Grid.Row="2" Grid.Column="1" TextAlignment="Center" Margin="5"
+                        MaxLength="10"
+                        PreviewTextInput="TextBox_OnPreviewTextInput">0</TextBox>
+                <TextBox x:Name="TextBoxSample"     Grid.Row="3" Grid.Column="1" TextAlignment="Center" Margin="5"
+                        MaxLength="10"
+                        PreviewTextInput="TextBox_OnPreviewTextInput">0</TextBox>
+                <ComboBox x:Name="ComboBoxForm"     Grid.Row="4" Grid.Column="1" Margin="5" SelectedIndex="0">
+                    <TextBlock>Синусоида</TextBlock>
+                    <TextBlock>Меандр</TextBlock>
+                    <TextBlock>Треугольная</TextBlock>
+                    <TextBlock>Пилообразная</TextBlock>
+                </ComboBox>
+            </Grid>
+            
+            <Button x:Name="ButtonGenerate" Margin="10" Click="ButtonGenerate_OnClick">Генерировать</Button>
+            
+        </StackPanel>
+        
+        
+        <Rectangle Grid.Row="0" Grid.Column="1" Fill="#F0F0F0" RadiusX="5" RadiusY="5" Margin="10">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="10" Color="#FF8B8B8B" ShadowDepth="0"/>
+            </Rectangle.Effect>
+        </Rectangle>
+        
+        <oxy:PlotView x:Name="PlotMagnitudes" Grid.Row="0" Grid.Column="1" Margin="40, 10, 40, 10"
+                      Model="{Binding Signal}"
+                      Background="#F0F0F0"/>
 
     </Grid>
 </Window>
